@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python PDF 练习出题"
+  short_description: "根据本地 Python PDF 持续生成可追踪巩固练习题"
+  default_prompt: "使用 $reinforce-python-pdf 根据当前目录的学习 PDF 出一套巩固练习。"
