@@ -7,7 +7,9 @@ authors = [
     { name = "huyuanhai", email = "huyuanhai@scutech.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "requests>=2.34.2",
+]
 
 [project.scripts]
 spider = "spider:main"
