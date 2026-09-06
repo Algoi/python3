@@ -140,6 +140,12 @@ wheels = [
 ]
 
 [[package]]
+name = "jsonpath"
+version = "0.82.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/a1/693351acd0a9edca4de9153372a65e75398898ea7f8a5c722ab00f464929/jsonpath-0.82.2.tar.gz", hash = "sha256:d87ef2bcbcded68ee96bc34c1809b69457ecec9b0c4dd471658a12bd391002d1", size = 10353, upload-time = "2023-08-24T18:57:55.459Z" }
+
+[[package]]
 name = "lxml"
 version = "6.1.3"
 source = { registry = "https://pypi.org/simple" }
@@ -244,6 +250,7 @@ source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
     { name = "bs4" },
+    { name = "jsonpath" },
     { name = "lxml" },
     { name = "requests" },
 ]
@@ -252,6 +259,7 @@ dependencies = [
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.15.0" },
     { name = "bs4", specifier = ">=0.0.2" },
+    { name = "jsonpath", specifier = ">=0.82.2" },
     { name = "lxml", specifier = ">=6.1.3" },
     { name = "requests", specifier = ">=2.34.2" },
 ]

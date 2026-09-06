@@ -1,0 +1,179 @@
+<html>
+<head>
+    <title>极客商城</title>
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="header">
+        <a href="/">首页</a>
+        <a href="/products">商品中心</a>
+        <a href="/login" class="login">登录</a>
+    </div>
+
+    <!-- 商品列表 -->
+    <div id="product-list">
+
+        <div class="product" data-id="1001" data-stock="12">
+            <h2 class="title">
+                <a href="/product/1001">Python 爬虫实战</a>
+            </h2>
+
+            <div class="price-info">
+                <span class="price">￥89</span>
+                <span class="original-price">￥109</span>
+            </div>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>爬虫</span>
+                <span>畅销</span>
+            </div>
+
+            <p class="description">
+                适合 Python 初学者的
+                <strong>网络爬虫</strong>
+                实战教程
+            </p>
+
+            <div class="meta">
+                <span class="author">作者：李明</span>
+                <span class="rating">4.9</span>
+                <span class="sales">销量：1200</span>
+            </div>
+
+            <button class="buy">立即购买</button>
+        </div>
+
+
+        <div class="product hot" data-id="1002" data-stock="0">
+            <h2 class="title">
+                <a href="/product/1002">深入理解 Python</a>
+            </h2>
+
+            <div class="price-info">
+                <span class="price">￥129</span>
+                <span class="original-price">￥159</span>
+            </div>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>进阶</span>
+            </div>
+
+            <p class="description">
+                深入学习 Python 的
+                <strong>底层原理</strong>
+                与高级特性
+            </p>
+
+            <div class="meta">
+                <span class="author">作者：王强</span>
+                <span class="rating">4.7</span>
+                <span class="sales">销量：860</span>
+            </div>
+
+            <button class="disabled">暂时缺货</button>
+        </div>
+
+
+        <div class="product" data-id="1003" data-stock="25">
+            <h2 class="title">
+                <a href="/product/1003">Linux 系统编程</a>
+            </h2>
+
+            <div class="price-info">
+                <span class="price">￥99</span>
+            </div>
+
+            <div class="tags">
+                <span>Linux</span>
+                <span>C++</span>
+                <span>系统编程</span>
+            </div>
+
+            <p class="description">
+                Linux 环境下的系统级编程实践
+            </p>
+
+            <div class="meta">
+                <span class="author">作者：赵磊</span>
+                <span class="rating">4.8</span>
+                <span class="sales">销量：950</span>
+            </div>
+
+            <button class="buy">立即购买</button>
+        </div>
+
+
+        <div class="product recommend" data-id="1004" data-stock="5">
+            <h2 class="title">
+                <a href="/product/1004">PostgreSQL 数据库实战</a>
+            </h2>
+
+            <div class="price-info">
+                <span class="price">￥149</span>
+                <span class="original-price">￥199</span>
+            </div>
+
+            <div class="tags">
+                <span>数据库</span>
+                <span>PostgreSQL</span>
+            </div>
+
+            <p class="description">
+                从 SQL 基础到
+                <strong>数据库运维</strong>
+                与性能优化
+            </p>
+
+            <div class="meta">
+                <span class="author">作者：陈涛</span>
+                <span class="rating">4.95</span>
+                <span class="sales">销量：1580</span>
+            </div>
+
+            <button class="buy">立即购买</button>
+        </div>
+
+    </div>
+
+
+    <!-- 技术文章 -->
+    <div id="articles">
+
+        <div class="article">
+            <a href="/article/1" class="article-title">
+                Python requests 使用指南
+            </a>
+            <span class="views">阅读：2300</span>
+        </div>
+
+        <div class="article">
+            <a href="/article/2" class="article-title">
+                XPath 从入门到实战
+            </a>
+            <span class="views">阅读：5600</span>
+        </div>
+
+        <div class="article">
+            <a href="/article/3" class="article-title">
+                BeautifulSoup 数据解析
+            </a>
+            <span class="views">阅读：1800</span>
+        </div>
+
+    </div>
+
+
+    <!-- 分页 -->
+    <div class="pagination">
+        <a href="/products?page=1" class="current">1</a>
+        <a href="/products?page=2">2</a>
+        <a href="/products?page=3">3</a>
+        <a href="/products?page=2" class="next">下一页</a>
+    </div>
+
+</body>
+</html>
