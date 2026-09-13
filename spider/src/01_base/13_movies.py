@@ -93,9 +93,21 @@ def get_all_pages_movie_info():
 
 
 
+'''
+    一个页面通过滚动条加载后面的电影信息
+'''
+def get_scroll_page_movie_info():
+    for i in range(1, 12):
+        url = f'http://58.87.96.193:8000/api/movies?page={i}&movie_type=&movie_time='
+        resp = requests.get(url) # 返回的是 json 数据
+        print(resp.json())
+
+
 if __name__ == '__main__':
     # get_signal_movie_info(2)
 
     # get_page_movie_info(1)
 
-    get_all_pages_movie_info()
+    # get_all_pages_movie_info()
+
+    get_scroll_page_movie_info()
