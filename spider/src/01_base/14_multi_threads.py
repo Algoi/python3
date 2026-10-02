@@ -35,6 +35,11 @@ import threading
 import json
 import requests
 
+'''
+    以下案例在获取网页数据的时候使用了方法版多线程
+            在处理网页响应数据的时候使用了类版多线程
+'''
+
 def generate_url(pages: list):
     '''
         生成需要爬取的所有网页的 url，这里的案例是爬取不同 page 页面的电影信息，返回 json数据
